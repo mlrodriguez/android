@@ -24,4 +24,4 @@ after_success:
   #- git ls-files -o
   #- printenv
   - curl http://static.monkop.com/setup/cli/monkop-cli.py -o monkop-cli.py
-  - python monkop-cli.py -k $monkopapikey -a $TRAVIS_BUILD_DIR/sample-app/build/outputs/apk/sample-app-free-debug.apk
+  - python monkop-cli.py -w -k $monkopapikey -a $TRAVIS_BUILD_DIR/sample-app/build/outputs/apk/sample-app-free-debug.apk
